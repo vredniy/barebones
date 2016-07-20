@@ -2,7 +2,7 @@
 
 class TestJob < ActiveJob::Base
   queue_as :default
- 
+
   def perform
     puts "Resque is working."
   end

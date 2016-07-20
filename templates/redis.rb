@@ -5,7 +5,7 @@ redis_db_0 = Redis.new(
 )
 
 $redis_default = Redis::Namespace.new(
-  Rails.application.secrets.redis_namespace_default, 
+  Rails.application.secrets.redis_namespace_default,
   :redis => redis_db_0
 )
 
